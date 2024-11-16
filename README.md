@@ -55,7 +55,7 @@ Git: Version control.
 
 6. How to use:
 Clone the repository:
-git clone https://github.com/amu-jay/DivvyBikes.git
+git clone https://github.com/amulya-jayanti/DivvyBikes.git
 Install dependencies:
 pip install -r requirements.txt
 Explore the Jupyter notebooks in the notebooks folder to follow the analysis step-by-step.
