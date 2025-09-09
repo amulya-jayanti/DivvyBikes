@@ -1,75 +1,76 @@
-# DivvyBikes
-Divvy Bikes- Chicago EDA
+# Divvy Bikes Usage Analysis
 
-1. Overview:
-This repository contains an exploratory data analysis (EDA) project conducted on Divvy bike-sharing data. The analysis aims to uncover patterns in bike usage, understand user behavior, and derive actionable insights for improving the bike-sharing service.
+This repository contains an exploratory data analysis (EDA) project on data from **Divvy**, Chicago's public bike-sharing system. The goal is to uncover patterns in bike usage, understand user behavior, and derive actionable insights for optimizing the service. 
 
-Divvy Bikes is a public bike-sharing system in Chicago. This project explores the data to understand bike usage trends, identify peak usage times, and assess the performance of different stations. The insights derived can help in optimizing operations, planning expansions, and improving customer satisfaction.
+---
 
-2. Dataset Description:
-The dataset used contains the following fields:
+### **Overview**
 
-Ride Details:
-start_time: The starting time of the bike ride.
-end_time: The ending time of the bike ride.
-ride_duration: Calculated duration of the ride (in minutes).
-Station Information:
-start_station_name: Name of the station where the ride began.
-end_station_name: Name of the station where the ride ended.
-Categorical Data:
-user_type: Subscriber or casual rider.
-Optional Data:
-Latitude and longitude were removed from the analysis.
-Station names were retained for geographical analysis.
+Divvy provides a convenient and eco-friendly transportation option for residents and visitors in Chicago. This project explores its data to understand usage trends, identify popular stations, and assess differences between various user types. The insights gained can help improve operations, plan future expansions, and enhance customer satisfaction.
 
+---
 
-3. Analysis Goals:
-Identify peak usage times by categorizing hours into:
-Rush Hour: Morning and evening commute hours.
-Night: Late night and early morning.
-Other: Non-peak daytime hours.
-Determine popular stations for starting and ending rides.
-Analyze ride durations to understand user behavior.
-Examine differences in usage patterns between casual riders and subscribers.
+### **Dataset**
 
-4. EDA Highlights:
-Hour Type Categorization:
-Rush Hour: 7–9 AM, 3–6 PM.
-Night: 9 PM–6 AM.
-Other: All other hours.
-Popular Stations:
-Identified the top 5 stations for starts and ends.
-Ride Duration Insights:
-Average and median ride durations across user types.
-Temporal Trends:
-Weekly and monthly usage patterns.
-User Comparison:
-Casual vs. subscriber behaviors.
+The dataset used for this analysis includes:
 
-5. Technologies Used:
-Python:
-Pandas: Data wrangling and manipulation.
-Matplotlib & Seaborn: Data visualization.
-Jupyter Notebook: Interactive analysis and visualization.
-Git: Version control.
+* **Ride Details:** `start_time`, `end_time`, and `ride_duration`.
+* **Station Information:** `start_station_name` and `end_station_name`.
+* **Categorical Data:** `user_type` (subscriber or casual rider).
 
-6. How to use:
-Clone the repository:
-git clone https://github.com/amulya-jayanti/DivvyBikes.git
-Install dependencies:
-pip install -r requirements.txt
-Explore the Jupyter notebooks in the notebooks folder to follow the analysis step-by-step.
-Contributing
+Station names were retained for geographical analysis, while optional data such as latitude and longitude were removed.
 
-Contributions are welcome! If you'd like to suggest enhancements or add new features:
+---
 
-Fork this repository.
-Create a new branch: git checkout -b feature-name.
-Commit your changes: git commit -m 'Add a feature'.
-Push to the branch: git push origin feature-name.
-Open a pull request.
+### **Analysis Goals**
 
-7. Acknowledgments:
-Divvy Bikes for providing the data.
-The City of Chicago for fostering innovation in public transit.
-Python community for the incredible open-source tools.
+The project focuses on the following key areas:
+
+* **Temporal Patterns:** Categorizing usage into different times of day to identify peak usage periods.
+    * **Rush Hour:** 7–9 AM and 3–6 PM.
+    * **Night:** 9 PM–6 AM.
+    * **Other:** All non-peak daytime hours.
+* **Popular Stations:** Identifying the top stations for starting and ending rides.
+* **User Behavior:** Analyzing average and median ride durations and comparing the usage habits of casual riders versus subscribers.
+* **Monthly and Weekly Trends:** Examining how ride usage changes over the course of the year and week.
+
+---
+
+### **Technology Stack**
+
+This project leverages the following tools and libraries:
+
+* **Python:** The core programming language for the analysis.
+* **Pandas:** Used for data wrangling, cleaning, and manipulation.
+* **Matplotlib & Seaborn:** Employed for creating data visualizations and plots.
+* **Jupyter Notebook:** Provides an interactive environment for step-by-step analysis.
+* **Git:** For version control and collaborative development.
+
+---
+
+### **How to Use**
+
+1.  **Clone the repository:**
+    ```
+    git clone [https://github.com/amulya-jayanti/DivvyBikes.git](https://github.com/amulya-jayanti/DivvyBikes.git)
+    ```
+2.  **Install dependencies:**
+    ```
+    pip install -r requirements.txt
+    ```
+3.  **Explore the notebooks:**
+    Navigate to the `notebooks` folder to follow the analysis step-by-step and view the visualizations.
+
+---
+
+### **Contributing**
+
+Contributions, suggestions, and feature enhancements are welcome. Please feel free to open a pull request or issue.
+
+---
+
+### **Acknowledgments**
+
+* **Divvy Bikes** for making this public data available.
+* The **City of Chicago** for their commitment to public transit innovation.
+* The **Python community** for providing a rich ecosystem of open-source tools.
